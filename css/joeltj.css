@@ -32,7 +32,7 @@ header .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 250px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
@@ -55,8 +55,8 @@ header .intro-text .intro-heading {
 
 .btn-xl {
   color: #ffffff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #58C8F3;
+  border-color: #58C8F3;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -70,8 +70,8 @@ header .intro-text .intro-heading {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: #ffffff;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #03B9FE;
+  background-color: #03B9FE;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -99,4 +99,60 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
   color: #fed136;
   background-color: #ffffff;
+}
+
+/* Joel*/
+header .intro-heading span{
+  background: rgba(59, 192, 255, 0.43);
+  line-height: normal;
+}
+
+.navbar-default{
+  background-color: rgba(248,248,248,0.3);
+  border: none;
+}
+
+@media (min-width: 768px){
+  .navbar-default .navbar-brand {
+      font-size: 2.5em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  .navbar-default{
+        padding: 20px 0;
+  }
+}
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+    font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+.quote {
+    font-family: "Yellowtail", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+.navbar-default .nav li a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFF;
+    background-color: rgba(59, 192, 255, 0.43);
 }
