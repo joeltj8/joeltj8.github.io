@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Joel Thomas James | joeltj8.github.io</title>
+
+
+  <!-- Bootstrap Core CSS -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+  <!-- Custom CSS -->
+  <link href="css/the-big-picture.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <div class="logo"><div class="logo-in"><span id="logo">&nbsp;Jo&nbsp;&nbsp; </span></div></div>
+  <!-- Page Content -->
+  <div class="container main-cont">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h1>Hello!</h1>
+        <h1>I'm Joel Thomas James</h1>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+          <div id="typed-strings">
+            <p>It's cool that <strong>You</strong> are here.</p>
+            <p>I love beautifully designed websites.</p>
+            <p>I'm a web developer at <strong>QuEST Global</strong></p>
+            <p>Learning new things everyday.</p>
+            <p>I feel it's awesome to create things!</p>
+          </div>
+          <span class="typ " id="typed" ></span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+      <div class="container footer-cont">
+        <div class="row">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <a href="https://github.com/joeltj8" target="_blank">
+                <img class="img-reponsive" src="img/github.png"></img>
+              </a>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <img class="img-reponsive" src="img/google.png"></img>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <img class="img-reponsive" src="img/twitter.png"></img>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+
+              <a href="https://in.linkedin.com/in/joel-thomas-james-aab11966" target="_blank">
+                <img class="img-reponsive" src="img/linkedin.png" ></img>
+              </a>
+
+            </div>
+            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+            <div id="dd" class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <!-- <img id="skyp" class="img-reponsive" src="img/skype.png"></img> -->
+              <div id="SkypeButton_Call_joetj8">
+              <script type="text/javascript">
+              console.log(Skype);
+                Skype.ui({
+                  "name": "dropdown",
+                  "element": "SkypeButton_Call_joetj8",
+                  "participants": ["joetj8"],
+                  "imageSize": 32
+                });
+
+                console.log($('#SkypeButton_Call_joetj8'));
+
+              </script>
+            </div>
+
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <img class="img-reponsive" src="img/youtube.png"></img>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <img class="img-reponsive" src="img/facebook.png"></img>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+              <img class="img-reponsive" src="img/whatsapp.png"></img>
+            </div>
+
+        </div>
+      </div>
+</footer>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+  $(function(){
+
+      $("#typed").typed({
+          // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+          stringsElement: $('#typed-strings'),
+          typeSpeed: 100,
+          backDelay: 500,
+          loop: true,
+          contentType: 'html', // or text
+          // defaults to false for infinite loop
+          loopCount: false,
+          callback: function(){ foo(); },
+          resetCallback: function() { newTyped(); }
+      });
+
+      $(".reset").click(function(){
+          $("#typed").typed('reset');
+      });
+
+
+
+  });
+
+  function newTyped(){ /* A new typed object */ }
+
+  function foo(){ console.log("Callback"); }
+
+  (function($) {
+  if ($.fn.style) {
+    return;
+  }
+
+  // Escape regex chars with \
+  var escape = function(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+  };
+
+  // For those who need them (< IE 9), add support for CSS functions
+  var isStyleFuncSupported = !!CSSStyleDeclaration.prototype.getPropertyValue;
+  if (!isStyleFuncSupported) {
+    CSSStyleDeclaration.prototype.getPropertyValue = function(a) {
+      return this.getAttribute(a);
+    };
+    CSSStyleDeclaration.prototype.setProperty = function(styleName, value, priority) {
+      this.setAttribute(styleName, value);
+      var priority = typeof priority != 'undefined' ? priority : '';
+      if (priority != '') {
+        // Add priority manually
+        var rule = new RegExp(escape(styleName) + '\\s*:\\s*' + escape(value) +
+            '(\\s*;)?', 'gmi');
+        this.cssText =
+            this.cssText.replace(rule, styleName + ': ' + value + ' !' + priority + ';');
+      }
+    };
+    CSSStyleDeclaration.prototype.removeProperty = function(a) {
+      return this.removeAttribute(a);
+    };
+    CSSStyleDeclaration.prototype.getPropertyPriority = function(styleName) {
+      var rule = new RegExp(escape(styleName) + '\\s*:\\s*[^\\s]*\\s*!important(\\s*;)?',
+          'gmi');
+      return rule.test(this.cssText) ? 'important' : '';
+    }
+  }
+
+  // The style function
+  $.fn.style = function(styleName, value, priority) {
+    // DOM node
+    var node = this.get(0);
+    // Ensure we have a DOM node
+    if (typeof node == 'undefined') {
+      return this;
+    }
+    // CSSStyleDeclaration
+    var style = this.get(0).style;
+    // Getter/Setter
+    if (typeof styleName != 'undefined') {
+      if (typeof value != 'undefined') {
+        // Set style property
+        priority = typeof priority != 'undefined' ? priority : '';
+        style.setProperty(styleName, value, priority);
+        return this;
+      } else {
+        // Get style property
+        return style.getPropertyValue(styleName);
+      }
+    } else {
+      // Get CSSStyleDeclaration
+      return style;
+    }
+  };
+})(jQuery);
+
+$("#SkypeButton_Call_joetj8_paraElement").find("img").attr("src","img/skype.png").css("margin","0px");
+$("#dropdown_SkypeButton_Call_joetj8").style("margin-top","-200px ","important");
+
+  </script>
+</body>
+
+</html>
