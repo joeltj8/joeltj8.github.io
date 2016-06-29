@@ -22,6 +22,7 @@
   <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
   <!-- Custom CSS -->
   <link href="css/the-big-picture.css" rel="stylesheet">
+  <link href="css/joeltj.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,32 +32,107 @@
     <![endif]-->
 </head>
 
-<body>
+<body id="home">
 
-  <div class="logo"><div class="logo-in"><span id="logo">&nbsp;Jo&nbsp;&nbsp; </span></div></div>
-  <!-- Page Content -->
-  <div class="container main-cont">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <h1>Hello!</h1>
-        <h1>I'm Joel Thomas James</h1>
-      </div>
-    </div>
-    <!-- /.row -->
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-          <div id="typed-strings">
-            <p>It's cool that <strong>You</strong> are here.</p>
-            <p>I love beautifully designed websites.</p>
-            <p>I'm a web developer at <strong>QuEST Global</strong></p>
-            <p>Learning new things everyday.</p>
-            <p>I feel it's awesome to create things!</p>
+
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="#home"><span id="logo">&nbsp;Jo&nbsp;&nbsp; </span></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-left">
+                      <li class="hidden active">
+                          <a href="#page-top"></a>
+                      </li>
+                      <li class="">
+                          <a class="page-scroll" href="#home">Home</a>
+                      </li>
+                      <li class="">
+                          <a class="page-scroll" href="#explore">Explore</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
           </div>
-          <span class="typ " id="typed" ></span>
-      </div>
-    </div>
-  </div>
+          <!-- /.container-fluid -->
+      </nav>
+  <header >
+    <!-- Page Content -->
+      <div class="container-full-header">
 
+        <div class="row header-row">
+          <div class="col-md-6 col-sm-12">
+            <h1>Hello!</h1>
+            <h1>I'm Joel Thomas James</h1>
+          </div>
+        </div>
+        <!-- /.row -->
+        <div class="row header-row">
+          <div class="col-md-12 col-sm-12">
+              <div id="typed-strings">
+                <p>It's cool that <strong>You</strong> are here.</p>
+                <p>I love beautifully designed websites.</p>
+                <p>I'm a web developer at <strong>QuEST Global</strong></p>
+                <p>Learning new things everyday.</p>
+                <p>I feel it's awesome to create things!</p>
+              </div>
+              <span class="typ " id="typed" ></span>
+          </div>
+        </div>
+      </div>
+  </header>
+  <section id="explore">
+    <!-- Page Content -->
+    <div class="container-full">
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h1>Works</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="img/roundicons.png" class="img-responsive" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="img/roundicons.png" class="img-responsive" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="img/roundicons.png" class="img-responsive" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <footer class="footer">
       <div class="container footer-cont">
         <div class="row">
@@ -110,6 +186,39 @@
         </div>
       </div>
 </footer>
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>Project Name</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-responsive img-centered" src="img/roundicons-free.png" alt="">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                        <p>
+                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                        <ul class="list-inline">
+                            <li>Date: July 2014</li>
+                            <li>Client: Round Icons</li>
+                            <li>Category: Graphic Design</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <!-- /.container -->
 
   <!-- jQuery -->
@@ -215,6 +324,11 @@ $("#SkypeButton_Call_joetj8_paraElement").find("img").attr("src","img/skype.png"
 $("#dropdown_SkypeButton_Call_joetj8").style("margin-top","-200px ","important");
 
   </script>
+
+  <!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script src="js/joeltj.js"></script>
 </body>
 
 </html>
